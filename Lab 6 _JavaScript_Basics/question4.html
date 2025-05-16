@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort number</title>
+    <style>
+        td{
+            text-align: center;
+           
+        }
+        input{
+            width: 160px;
+            height: 30px;
+            font-size: large;
+            text-align: center;
+            font-weight: bold;
+        }
+        button{
+            font-size: large;
+            height: 45px;
+            width: fit-content;
+        }
+        .sortBar{
+            width: fit-content;
+            background-color: gray;
+            padding: 50px;
+        }
+       body{
+        margin-left: 35%;
+       }
+    </style>
+</head>
+<body>
+    <div class="sortBar">
+        <h1>Input Section</h1>
+        <table>
+            <tr>
+                <td>
+                    <h1>A</h1>&nbsp;
+                    <input type="number" id="a">
+                </td>
+                <td>
+                    <h1>B</h1>&nbsp;
+                    <input type="number" id="b">
+                </td>
+                <td>
+                    <h1>C</h1>&nbsp;
+                    <input type="number" id="c">
+                </td>
+                
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="asc()">Sort In Ascending Order</button>&nbsp;&nbsp;
+        <button onclick="des()">Sort In Descending Order</button>
+        <br><br><hr>
+        <br><br>
+        <h1>Output Section</h1>
+        <table>
+            <tr>
+                <td>
+                    <input type="number" id="aa" disabled>
+                </td>
+                <td>
+                    <input type="number" id="ba" disabled>
+                </td>
+                <td>
+                    <input type="number" id="ca" disabled>
+                </td>
+                
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    <script>
+         
+        function asc(){
+            mydata = [
+          Number(document.getElementById("a").value),
+          Number(document.getElementById("b").value),
+          Number(document.getElementById("c").value),
+       
+        ];
+             mydata.sort();
+            document.getElementById("aa").value = mydata[0];
+            document.getElementById("ba").value = mydata[1];
+            document.getElementById("ca").value = mydata[2];
+        }
+        function des(){
+            mydata = [
+          Number(document.getElementById("a").value),
+          Number(document.getElementById("b").value),
+          Number(document.getElementById("c").value),
+       
+        ];
+            mydata.sort();
+             document.getElementById("aa").value = mydata[2];
+            document.getElementById("ba").value = mydata[1];
+            document.getElementById("ca").value = mydata[0];
+        }
+    </script>
+</body>
+</html>

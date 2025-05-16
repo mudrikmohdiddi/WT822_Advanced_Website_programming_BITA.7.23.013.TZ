@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body>
+    <label>1st Number:</label>
+    <input type="number" name="" id="no1"><br><br>
+    <label>2nd Number:</label>
+    <input type="number" name="" id="no2"><br><br>
+    <button onclick="multipy()">Multiply</button>&nbsp;
+    <button onclick="divide()">Divide</button><br><br>
+    <p>The Result Is:</p>
+    <p id="result"></p>
+    <script>
+        function multipy(){
+            let no1 = document.getElementById("no1");
+            let no2 = document.getElementById("no2");
+            result = no1.value * no2.value;
+            document.getElementById("result").innerHTML = result;
+        }
+        function divide(){
+            let no1 = document.getElementById("no1");
+            let no2 = document.getElementById("no2");
+            result = no1.value / no2.value;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
