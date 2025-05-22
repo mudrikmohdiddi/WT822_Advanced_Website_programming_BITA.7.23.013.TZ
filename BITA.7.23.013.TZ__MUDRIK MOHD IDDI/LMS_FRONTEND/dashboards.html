@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .topbar{
+            height: 10vh;
+            padding: 15px;
+            padding-left: 40px;
+        }
+        .topbar a{
+            text-decoration: none;
+            
+            padding-left: 10px;
+        }
+        .topbar label{
+            color: cyan;
+            font-size: large;
+            font-weight: bold;
+        }
+        .main{
+            
+            height: 80vh;
+
+        }
+        footer{
+            height: 10vh;
+            color: cyan;
+            text-align: center;
+            
+        }
+        .dropdown-menu{
+            float: left;
+        }
+        .card{
+            width: 25%;
+            
+        }
+        .welcome{
+            margin-left: 170px;
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <nav class="topbar col-md-12" style="background-color: rgb(10, 10, 27);">
+           <label for="">Library System</label>
+            <a href="manage-users.html">Manage user</a>
+            <a href="manage-book.html">Manage Book</a>
+            <a href="manage-member.html">Manage Member</a>
+            <a href="book-issuance.html">Book Issuarence</a>
+            <a href="manage- returns.html">Manage Return</a>
+            <a href="report.html">Report</a>
+          <ul class="dropdown-menu dropdown-menu-end" >
+          <li><a class="dropdown-item" href="">Change Password</a></li>
+          <li><a class="dropdown-item" href="">Change Profile</a></li>
+          <li><a class="dropdown-item" href="">Logout</a></li>
+        </ul>
+        </nav>
+        <div class="main col-md-12" style="background-color: cyan">
+            <h3 class="welcome">Welcome to the Library Management Dashboard</h3>
+       <div class="row">
+        <div class="card text-center bg-color-primary col-md-4" style="margin-left: 180px;background-color: blue;color:cyan">
+            <div class="card-body bg-color-primary">
+          <h4>Total Book</h4>
+          <h5>1250</h5>
+        </div>
+        </div>
+       
+        <div class="card text-center bg-color-primary col-md-4" style="margin-left: 20px;background-color: rgb(214, 214, 108);color:cyan">
+            <div class="card-body bg-color-primary" >
+          <h4>Activity Member</h4>
+          <h5>540</h5>
+        </div>
+        </div>
+       
+        <div class="card text-center bg-color-primary col-md-4" style="margin-left: 20px;background-color: green;color:cyan">
+            <div class="card-body bg-color-primary">
+          <h4>Book Issued</h4>
+          <h5>320</h5>
+        </div>
+        </div>
+       
+    </div>
+
+        </div>
+        <footer class="col-md-12" style="background-color: rgb(10, 10, 27)">
+            <br>
+            <p>© 2025 Library Management System All right received.</p>
+        </footer>
+       
+        
+    </div>
+</body>
+</html>
